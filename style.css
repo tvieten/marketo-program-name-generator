@@ -1,0 +1,14 @@
+.card {
+  padding: 20px;
+}
+
+form {
+  margin-top: 20px;
+}
+#prgName {
+  font-size: large;
+  box-sizing: content-box;
+}
+.brand-logo {
+  margin-left: 20px;
+}

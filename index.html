@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marketo Program Name Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper light-blue darken-1">
+          <a href="#!" class="brand-logo left"><i class="material-icons">brightness_high</i>Marketo Program Name Generator</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="card light-blue lighten-5">
+              <span class="card-title">Generate Marketo Program Name</span>
+              <form action="POST">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <select id="selCountry">
+                      <option value="" disabled selected>Choose your country</option>
+                      <option value="EUR">Europe</option>
+                      <option value="AT">Austria</option>
+                      <option value="BE">Belgium</option>
+                      <option value="DK">Denmark</option>
+                      <option value="FI">Finland</option>
+                      <option value="FR">France</option>
+                      <option value="DE">Germany</option>
+                      <option value="IE">Ireland</option>
+                      <option value="IT">Italy</option>
+                      <option value="NL">Netherlands</option>
+                      <option value="NO">Norway</option>
+                      <option value="PL">Poland</option>
+                      <option value="PT">Portugal</option>
+                      <option value="ES">Spain</option>
+                      <option value="SE">Sweden</option>
+                      <option value="CH">Switzerland</option>
+                      <option value="GB">United Kingdom</option>
+                    </select>
+                    <label>Country</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <select id="selLanguage">
+                      <option value="" disabled selected>Choose your language</option>
+                      <option value="NONE">No Language</option>
+                      <option value="DA">Danish</option>
+                      <option value="NL">Dutch</option>
+                      <option value="EN">English</option>
+                      <option value="FI">Finnish</option>
+                      <option value="FR">French</option>
+                      <option value="DE">German</option>
+                      <option value="IT">Italian</option>
+                      <option value="NO">Norwegian</option>
+                      <option value="PL">Polish</option>
+                      <option value="PT">Portuguese</option>
+                      <option value="ES">Spanish</option>
+                      <option value="SE">Swedish</option>
+                    </select>
+                    <label>Language</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s3">
+                    <select id="selYear">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="20">2020</option>
+                      <option value="21">2021</option>
+                      <option value="22">2022</option>
+                      <option value="23">2023</option>
+                    </select>
+                    <label>Year</label>
+                  </div>
+                  <div class="input-field col s3">
+                    <select id="selMonth">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="01">January</option>
+                      <option value="02">February</option>
+                      <option value="03">March</option>
+                      <option value="04">April</option>
+                      <option value="05">May</option>
+                      <option value="06">June</option>
+                      <option value="07">July</option>
+                      <option value="08">August</option>
+                      <option value="09">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                    </select>
+                    <label>Month</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <select id="selBU">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="ES">Endpoint Solutions</option>
+                      <option value="AS">Advanced Solutions</option>
+                      <option value="DAT">Datech</option>
+                      <option value="MAV">Maverick</option>
+                    </select>
+                    <label>Business Unit</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <select id="selProgType">
+                      <option value="" disabled selected>Choose your program type</option>
+                      <option value="NL">Newsletter</option>
+                      <option value="EB">Email Blast, Campaign/Promotional Send</option>
+                      <option value="LE">Live Event</option>
+                      <option value="ENG">Engagement Program</option>
+                      <option value="CS">Content Syndication</option>
+                      <option value="LI">List Import</option>
+                      <option value="LP">Landing Page</option>
+                      <option value="OA">Online Advertising</option>
+                      <option value="PPC">Pay Per Click</option>
+                      <option value="TS">Trade Show</option>
+                      <option value="WBN">Webinar</option>
+                      <option value="WC">Website Content</option>
+                      <option value="ZOP">Operational</option>
+                    </select>
+                    <label>Program Type</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input placeholder="Optional" id="vendor" type="text" class="validate" />
+                    <label>Vendor</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Optional" id="idnumber" type="text" class="validate" />
+                    <label>ID Number</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input placeholder="Please enter your program name / description" id="progName" type="text" class="validate" />
+                    <label>Program Name / Description</label>
+                  </div>
+
+                  <div class="input-field col s6">
+                    <input placeholder="Optional" id="suffix" type="text" class="validate" />
+                    <label>Suffix</label>
+                  </div>
+                </div>
+              </form>
+
+              <div class="card-action green lighten-4">
+                <div class="row">
+                  <div class="input-field col s10">
+                    <input placeholder="Your-Prog-Name" id="concatPrgName" type="text" class="validate" />
+                    <label>Copy your program name</label>
+                  </div>
+                  <div class="col s2">
+                    <a id="copyBtn" class="waves-effect waves-light btn-large light-green"><i class="material-icons">content_copy</i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll("select");
+        var instances = M.FormSelect.init(elems);
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".datepicker");
+        var instances = M.Datepicker.init(elems);
+      });
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
